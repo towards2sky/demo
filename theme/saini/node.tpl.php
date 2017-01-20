@@ -1,4 +1,4 @@
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> post clearfix"<?php print $attributes; ?>>
 
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
@@ -11,7 +11,6 @@
   <div class="meta post-info">
     <?php if ($display_submitted): ?>
       <div class="meta submitted">
-        <?php print $user_picture; ?>
         <?php print $submitted; ?>
       </div>
     <?php endif; ?>
